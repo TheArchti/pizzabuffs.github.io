@@ -1,22 +1,51 @@
 *{
     font-family: Arial, Helvetica, sans-serif;
 
-}
+
+
 .heading{
-    color:white;
-    background-color:black;
-    text-transform:uppercase;
-    text-align:center;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size:large;
-}
-.Title{
     color:black;
-    background-color:white;
     text-transform:uppercase;
-    text-align:center;
+    text-align:left;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size:large;
+    padding-top:5%;
+    margin-left:15%;
+    font-size:40px;
+}
+
+
+.navbar {
+    background-color:black;
+    position: fixed;
+    top: 0;
+    width: 110%;
+  }
+  
+  .navbar a {
+    text-transform:uppercase;
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 25px;
+  }
+
+.title{
+    width:100%;
+    background-image:url("start.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    height:100%;
+    overflow:hidden;
+    color:white;
+    text-transform:uppercase;
+    text-align:center;
+    font-size:60px;
+    padding-bottom:20%;
+    padding-top:20%;
 }
 
 iframe {
@@ -35,6 +64,7 @@ iframe {
 }
 
 .image{
+    padding-top:5%;
     max-width:33%;
     max-height:22%;
     float:left;
@@ -51,6 +81,7 @@ iframe {
     font-family:Calibri;
     font-size: 20px;
     padding-left:0%;
+    padding-top:5%;
     float: right;
   }
 
@@ -105,4 +136,4 @@ iframe {
         display:none;
     }
 }
- 
+}
