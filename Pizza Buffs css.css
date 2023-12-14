@@ -1,0 +1,264 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+      }
+      
+
+
+
+.heading{
+    z-index: 0;
+    color:black;
+    text-transform:uppercase;
+    text-align:left;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size:large;
+    padding-top:5%;
+    margin-left:15%;
+    font-size:40px;
+}
+
+section{
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    z-index: 1;
+    background-color:black;
+    position: fixed;
+    top: 0;
+    width: 110%;
+    display:flex;
+    justify-content:center;
+  }
+  
+  .navbar a {
+    transition:0.5s;
+    text-transform:uppercase;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    align-items:center;
+    padding-right:21%;
+  }
+
+  .navbar a:hover {
+    background: orange;
+    color: black;
+  }
+
+.title{
+    z-index: 0;
+    width:100%;
+    background-image:url("start.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    height:100%;
+    overflow:hidden;
+    color:white;
+    text-transform:uppercase;
+    text-align:center;
+    font-size:60px;
+    padding-bottom:20%;
+    padding-top:20%;
+}
+
+iframe {
+    z-index: 0;
+        width:500px;
+        height:250px;
+        Border: 10px;
+        Border-color:black;
+        margin-left: 50vw;
+        transform: translate(-50%);
+      }
+
+.fineprint{
+    z-index: 0;
+    text-align:center;
+    color:grey;
+    font-size: 15px;
+}
+
+.image{
+    padding-top:5%;
+    max-width:33%;
+    max-height:22%;
+    float:left;
+    margin-left:15%;
+  }
+  
+.myparagraph{
+    line-height:2em;
+    margin-right:15%;
+    text-indent: 5%;
+    background-color:white;
+    color:black;
+    text-align:left;
+    font-family:Calibri;
+    font-size: 20px;
+    padding-left:0%;
+    padding-top:5%;
+    float: right;
+  }
+
+.team{
+    padding-top:25%;
+    margin-left:15%;
+    font-size:40px;
+}
+   
+.container{
+    display:flex;
+    width:90vw;
+}
+
+.panel{
+    text-align:center;
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height:80vh;
+    border-radius: 50px;
+    flex:0.5;
+    position:relative;
+    transition: flex 0.5s ease-in;
+    color:#fff;
+    cursor:pointer;
+    margin:10px;
+}
+
+.panel h3{
+    position:absolute;
+    bottom:20px;
+    left:20px;
+    opacity:0;
+}
+
+.panel.active{
+    flex:5;
+}
+
+.panel.active h3{
+    opacity:1;
+     transition: opacity 0.4s ease-in 0.4s;
+}
+
+@media(max-width:480px){
+    .container{
+        width:100vw;
+    }
+
+    .panel:nth-of-type(4),.panel:nth-of-type(5){
+        display:none;
+    }
+}
+
+.faq-container {
+    padding-bottom:5%;
+    border:white;
+    border-radius: 25px;
+    background-color:white;
+    max-width:850px;
+    margin:0 auto;
+}
+
+.faq-container h1 {
+    text-align:center;
+    padding-left: 2%;
+    color:black;
+}
+
+
+
+.faq{
+    background-color:orangered;
+    position:relative;
+    padding: 10px 20px;
+    margin:10px;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.3s ease-in;
+}
+
+.faq-text{
+    color:white;
+}
+
+.faq-title{
+    color:white;
+}
+
+.faq.active{
+    background-color: orange;
+    box-shadow: 3px 3px 6px rgba(0,0,0,0.1);
+}
+
+
+.faq .faq-text{
+    display:none;
+}
+
+.faq.active .faq-text{
+    display:block;
+}
+
+.faq-toggle{
+    position:absolute;
+    top:30px;
+    right:30px;
+    height:30px;
+    width:30px;
+    background-color:#fff;
+    border:0;
+    border-radius: 50%;
+}
+
+.faq-toggle:focus{
+    outline:0;
+}
+
+.faq-toggle .fa-times{
+    display:block;
+    color:#050101
+}
+
+.faq.active .faq-toggle .fa-times{
+    display: block;
+    color:#050101;
+}
+
+.faq.active .faq-toggle{
+    background-color:white gb(12, 1, 1);
+}
+
+.closure{
+    z-index: 1;
+    background-color:lightgray;
+    position:relative;
+    Bottom: 0;
+    width: 110%;
+    display:flex;
+    justify-content:center;
+    padding: 14px 16px;
+    text-decoration: none;
+    align-items:center;
+  }
+
+.closure p{
+    padding-right:10%;
+    padding-left:10%;
+    text-align:center;
+}
+
+.closure blockquote{
+    text-align:right;
+}
+
+.closure h2{
+    font-size:25px;
+    text-align:left
+}
